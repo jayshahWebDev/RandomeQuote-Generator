@@ -3,6 +3,8 @@ let copyQuoteBtn = document.querySelector(".copyQuoteButton");
 let generateQuoteBtn = document.querySelector(".generateQuoteButton");
 let quoteDetail = document.querySelector(".quoteDetail");
 let authorDetail = document.querySelector(".authorDetail");
+let quoteContent = document.querySelector(".quoteContent");
+let loader = document.querySelector(".loader");
 let textToSpeech = new SpeechSynthesisUtterance();
 
 let createRandomQuote = () => {
@@ -14,6 +16,8 @@ let createRandomQuote = () => {
     .then((result) => {
       quoteDetail.textContent = result.content;
       authorDetail.textContent = `~ ${result.author}`;
+      loader.style.display = "none";
+      quoteContent.style.display = "block";
     });
 };
 
