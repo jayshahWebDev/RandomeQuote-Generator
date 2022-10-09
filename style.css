@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #12b0e8;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.quoteSectionDiv {
+  background-color: #ffffff;
+  min-height: 200px;
+  max-height: fit-content;
+  width: 650px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.quoteContent {
+  padding: 0 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.quoteDetail {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+}
+
+.authorDetail {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  margin-bottom: 20px;
+}
+
+.btnBackground {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #3d8ef4;
+  /* background-color: #000066; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btnBackground > i {
+  color: #ffffff;
+  /* color: #ffff00; */
+  font-size: 18px;
+}
+
+.generateQuoteButton {
+  background-color: #3d8ef4;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
